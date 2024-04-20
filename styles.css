@@ -10,7 +10,7 @@ body {
 }
 
 .header-background {
-    background-image: url('/luca-bravo-XJXWbfSo2f0-unsplash\ \(1\).jpg');
+    background-image: url('./luca-bravo-XJXWbfSo2f0-unsplash\ \(1\).jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
