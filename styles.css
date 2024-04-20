@@ -1,0 +1,198 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6f6f6;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.header-background {
+    background-image: url('/luca-bravo-XJXWbfSo2f0-unsplash\ \(1\).jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* Apply blur effect */
+    filter: blur(5px);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.title {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9900;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff9900;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+
+/* Adjustments for the project section */
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* Add some space between sections */
+}
+
+.project {
+    width: calc(30% - 20px);
+    margin-bottom: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+    position: relative;
+    /* Add this to position images */
+}
+
+.project img {
+    width: 100%;
+    /* Adjust image width */
+    border-radius: 10px;
+    /* Match the project container's border radius */
+    margin-bottom: 10px;
+    /* Add some space between image and text */
+}
+
+.project h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    /* Lift the project card on hover */
+}
+
+
+/* Adjustments for other sections */
+
+section {
+    padding: 0 20px;
+    /* Add horizontal padding to all sections */
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* Media query for smaller screens */
+
+@media (max-width: 768px) {
+    .project {
+        width: calc(50% - 20px);
+        /* Adjust the width for smaller screens */
+    }
+    section {
+        padding: 0 10px;
+        /* Reduce padding for smaller screens */
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.1em;
+}
